@@ -24,10 +24,10 @@ defmodule EInk do
     data =
       case color do
         :white ->
-          :binary.copy(<<0x00>>, num_bytes)
+          :binary.copy(<<0xFF>>, num_bytes)
 
         :black ->
-          :binary.copy(<<0xFF>>, num_bytes)
+          :binary.copy(<<0x00>>, num_bytes)
 
         other ->
           raise "Invalid color `#{other}`. Supported colors are `:white`, `:black`, and `gray`"
@@ -38,7 +38,7 @@ defmodule EInk do
     draw(eink, data)
   end
 
-  def draw(eink, image) do
-    eink.driver_mod.draw(eink.driver, image)
+  def draw(eink, image, opts \\ []) do
+    eink.driver_mod.draw(eink.driver, image, opts)
   end
 end
