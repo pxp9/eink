@@ -22,7 +22,8 @@ defmodule Eink.MixProject do
   defp deps do
     [
       {:circuits_spi, "~> 2.0"},
-      {:circuits_gpio, "~> 2.0"}
+      {:circuits_gpio, "~> 2.0"},
+      {:dither, "~> 0.1"}
     ]
   end
 end
