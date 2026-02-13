@@ -184,10 +184,6 @@ This library depends on:
 - **[circuits_gpio](https://github.com/elixir-circuits/circuits_gpio)** (~> 2.0) - GPIO pin control for data/command, reset, and busy signals
 - **[dither](https://github.com/protolux-electronics/dither)** (~> 0.1) - Rust NIF for high-performance image processing (precompiled, no Rust toolchain required)
 
-### Why Circuits?
-
-The [Elixir Circuits](https://github.com/elixir-circuits) project provides production-ready, well-tested libraries for hardware communication. It supports multiple platforms including Nerves, Raspberry Pi, and other embedded Linux systems. Circuits.SPI and Circuits.GPIO abstract away the complexity of low-level hardware protocols, making it easy to work with SPI devices and control GPIO pins in pure Elixir.
-
 ## Platform Support
 
 The precompiled NIF binaries support the following platforms:
